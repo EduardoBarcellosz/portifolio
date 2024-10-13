@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@500;600&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 1;
+  background-color: #13131f;
+  font-family: "DM Sans", sans-serif;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centraliza os itens horizontalmente */
+  flex-wrap: wrap;
+  padding: 1rem ;
+  position: sticky; /* faz com que a header se mantenha mesmo descendo a página */
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+} 
+
+
+.logo {
+  display: flex;
+  position: absolute; /* Centraliza o logo verticalmente */
+  font-weight: bold;
+  font-size: 1rem;
+  color: rgb(252, 252, 252);
+}
+
+nav {
+  display: flex;
+  margin-left: auto;
+}
+
+nav ul {
+  display: flex;
+  gap: 2rem; /* Espaço entre os itens do menu */
+  list-style-type: none; /* Remove marcadores da lista */
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fffefe;
+}
+
+header::after {
+  content: "";
+  display: block;
+  height: 1px;
+  background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
+  background-size: 400%;
+  animation: rainbow 5s infinite;
+  width: 101%; /* Garante que a linha ocupe toda a largura do header */
+  position: absolute; /* Posiciona a linha em relação ao header */
+  bottom: 0rem; /* Posiciona a linha logo abaixo do header */
+}
+
+@keyframes rainbow {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+
+
+
