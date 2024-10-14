@@ -10,7 +10,7 @@ html {
 }
 
 * {
-  margin: 1;
+  margin: 0;
   background-color: #13131f;
   font-family: "DM Sans", sans-serif;
 }
@@ -32,7 +32,7 @@ html {
   display: flex;
   position: absolute; /* Centraliza o logo verticalmente */
   font-weight: bold;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   color: rgb(252, 252, 252);
 }
 
