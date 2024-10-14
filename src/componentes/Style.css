@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@500;600&display=swap");
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
 html {
   scroll-behavior: smooth;
 }
@@ -27,7 +32,7 @@ html {
   display: flex;
   position: absolute; /* Centraliza o logo verticalmente */
   font-weight: bold;
-  font-size: 1rem;
+  font-size: 0.9rem;
   color: rgb(252, 252, 252);
 }
 
@@ -80,7 +85,7 @@ header::after {
 }
 
 .contacts h2 {
-  font-size: 1.7rem;
+  font-size: 1rem;
   margin-bottom: 5rem;
   color: #333;
 }
@@ -95,8 +100,8 @@ header::after {
 
 /* Estilos gerais para os botões de redes sociais */
 .social-button {
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   border: none;
   border-radius: 50%;
   display: flex;
@@ -108,7 +113,7 @@ header::after {
 
 .social-button svg {
   color: rgb(0, 0, 0); /* Cor do ícone */
-  font-size: 25px; /* Tamanho do ícone */
+  font-size: 20px; /* Tamanho do ícone */
   background: none;
 }
 
@@ -122,21 +127,16 @@ header::after {
 /* Estilos específicos para cada rede social */
 .whatsapp {
   background-color: #25D366;
-  background-size: cover;
-
 }
 
 .github {
   background-color: #333;
-  background-size: cover;
 }
 
 .linkedin {
   background-color: #0077B5;
-  background-size: cover;
 }
 
 .instagram {
   background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-  background-size: cover;
 }

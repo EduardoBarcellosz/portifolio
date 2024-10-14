@@ -5,8 +5,8 @@ const Projetos: React.FC = () => {
   return (
     <section id="projects">
     <div className="projects-section">
-      <h2>Projetos</h2>
-      
+      <h3>Projetos</h3>
+
 
 
 
