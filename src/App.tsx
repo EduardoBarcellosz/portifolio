@@ -3,10 +3,13 @@ import 'swiper/css'; // Não se esqueça de importar os estilos do Swiper
 import Header from './componentes/Header';
 import About from './componentes/About';
 import Projetos from './componentes/Projetos';
+import { ChakraProvider } from '@chakra-ui/react'
+import Contatos from './componentes/Contatos';
 
 
 function App() {
   return (
+    
     <div className="App">
       {/* Cabeçalho */}
       <Header />
@@ -65,14 +68,14 @@ function App() {
       {/* Seção "Contato" */}
       <section id="contact" className="contact-section">
         {/* Conteúdo de contato */}
-        <h2>Contatos</h2>
-
+        <Contatos />
 
 
 
 
       </section>
     </div>
+    
   );
 }
 
