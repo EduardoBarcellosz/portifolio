@@ -1,9 +1,7 @@
-import { Button } from './Button';
 import 'swiper/css'; // Não se esqueça de importar os estilos do Swiper
 import Header from './componentes/Header';
 import About from './componentes/About';
 import Projetos from './componentes/Projetos';
-import { ChakraProvider } from '@chakra-ui/react'
 import Contatos from './componentes/Contatos';
 
 
