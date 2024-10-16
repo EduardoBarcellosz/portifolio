@@ -26,7 +26,7 @@ const Projetos: React.FC = () => {
           stretch: 0,
           depth: 300,
           modifier: 1,
-          slideShadows: false,
+          slideShadows: true,
         }}
         loop={true}
         modules={[EffectCoverflow, Pagination]}
