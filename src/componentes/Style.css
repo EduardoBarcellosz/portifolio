@@ -79,13 +79,13 @@ header::after {
   padding-bottom: 5rem;
   background-color: #f9f9f9;
   bottom: 0;
-  position: fixed;
+  position: relative;
   
 }
 
 .contacts h2 {
   font-size: 1rem;
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
   color: #333;
 }
 
@@ -162,3 +162,6 @@ header::after {
   width: 100%;
 }
 
+.projects-section {
+  text-align: center;
+}

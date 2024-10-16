@@ -33,9 +33,9 @@ const Projetos: React.FC = () => {
         className="mySwiper"
       >
         <SwiperSlide>
-        <a href="https://www.google.com">
-          <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
-        </a>       
+          <a href="https://www.google.com" target="_blank" rel="noopener noreferrer">
+            <img src="https://swiperjs.com/demos/images/nature-1.jpg" alt="Nature" />
+          </a>
         </SwiperSlide>
         <SwiperSlide>
           <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
@@ -62,11 +62,6 @@ const Projetos: React.FC = () => {
           <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
         </SwiperSlide>
       </Swiper>
-
-
-
-
-
     </div>
     </section>
   );
