@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@500;600&display=swap");
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
 html {
   scroll-behavior: smooth;
 }
@@ -100,6 +105,8 @@ header::after {
 .social-button {
   width: 50px;
   height: 50px;
+  width: 30px;
+  height: 30px;
   border: none;
   border-radius: 50%;
   display: flex;
@@ -111,7 +118,7 @@ header::after {
 
 .social-button svg {
   color: rgb(0, 0, 0); /* Cor do ícone */
-  font-size: 30px; /* Tamanho do ícone */
+  font-size: 20px; /* Tamanho do ícone */
   background: none;
 }
 
@@ -158,3 +165,4 @@ header::after {
   display: block;
   width: 100%;
 }
+
