@@ -1,35 +1,30 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@500;600&display=swap");
 
-
 html {
   scroll-behavior: smooth;
 }
 
 * {
   margin: 0;
-  /* background-color: #13131f; */
+  background-color: #13131f; 
   font-family: "DM Sans", sans-serif;
-  
-  
 }
 
 .header {
   display: flex;
   align-items: center;
-  justify-content: center; /* Centraliza os itens horizontalmente */
+  justify-content: center;
   flex-wrap: wrap;
-  padding: 2rem ;
-  position: sticky; /* faz com que a header se mantenha mesmo descendo a página */
+  padding: 2rem;
+  position: sticky;
   margin-right: auto;
   margin-left: auto;
   position: relative;
-  
-} 
-
+}
 
 .logo {
   display: flex;
-  position: absolute; /* Centraliza o logo verticalmente */
+  position: absolute;
   font-weight: bold;
   font-size: 0.8rem;
   color: rgb(252, 252, 252);
@@ -42,8 +37,8 @@ nav {
 
 nav ul {
   display: flex;
-  gap: 2rem; /* Espaço entre os itens do menu */
-  list-style-type: none; /* Remove marcadores da lista */
+  gap: 2rem;
+  list-style-type: none;
 }
 
 nav ul li a {
@@ -59,9 +54,9 @@ header::after {
   background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
   background-size: 400%;
   animation: rainbow 5s infinite;
-  width: 100%; /* Garante que a linha ocupe toda a largura do header */
-  position: absolute; /* Posiciona a linha em relação ao header */
-  bottom: 0rem; /* Posiciona a linha logo abaixo do header */
+  width: 100%;
+  position: absolute;
+  bottom: 0rem;
 }
 
 @keyframes rainbow {
@@ -77,22 +72,18 @@ header::after {
   justify-content: center;
   text-align: center;
   padding: 2rem 10rem;
-
 }
 
-
-.about-section h3{
+.about-section h3 {
   margin-bottom: 2rem;
- }
+}
 
-/* Estilos gerais para a seção de contatos */
 .contacts {
   text-align: center;
   padding-bottom: 5rem;
   background-color: #f9f9f9;
   bottom: 0;
   position: relative;
-  
 }
 
 .contacts h2 {
@@ -101,7 +92,6 @@ header::after {
   color: #333;
 }
 
-/* Estilos para a seção de ícones de redes sociais */
 .contact-section {
   display: flex;
   justify-content: center;
@@ -109,7 +99,6 @@ header::after {
   flex-wrap: wrap;
 }
 
-/* Estilos gerais para os botões de redes sociais */
 .social-button {
   width: 50px;
   height: 50px;
@@ -125,19 +114,16 @@ header::after {
 }
 
 .social-button svg {
-  color: rgb(0, 0, 0); /* Cor do ícone */
-  font-size: 20px; /* Tamanho do ícone */
+  color: rgb(0, 0, 0);
+  font-size: 20px;
   background: none;
 }
 
-
-
-.social-button:hover {
+social-button:hover {
   transform: scale(1.1);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Estilos específicos para cada rede social */
 .whatsapp {
   background-color: #25D366;
 }
@@ -158,7 +144,6 @@ header::after {
   width: 30%;
   padding-top: 50px;
   padding-bottom: 50px;
-  
 }
 
 .swiper-slide {
@@ -166,16 +151,86 @@ header::after {
   background-size: cover;
   width: 7rem;
   height: 7rem;
-  
 }
 
 .swiper-slide img {
   display: block;
   width: 100%;
   border-radius: 3%;
-  
 }
 
 .projects-section {
   text-align: center;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .about-section {
+    padding: 2rem 5rem;
+  }
+
+  .contact-section {
+    gap: 5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .logo {
+    position: static;
+    margin-bottom: 1rem;
+  }
+
+  nav {
+    margin-left: 0;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .about-section {
+    padding: 2rem;
+  }
+
+  .contact-section {
+    gap: 2rem;
+  }
+
+  .social-button {
+    width: 40px;
+    height: 40px;
+  }
+
+  .swiper {
+    width: 80%;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    padding: 0.5rem;
+  }
+
+  .about-section {
+    padding: 1rem;
+  }
+
+  .contact-section {
+    gap: 1rem;
+  }
+
+  .social-button {
+    width: 30px;
+    height: 30px;
+  }
+
+  .swiper {
+    width: 100%;
+  }
 }
