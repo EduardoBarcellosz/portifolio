@@ -10,8 +10,8 @@ const Header: React.FC = () => {
       <nav>
         <ul>
           <li><a href="#about">Sobre</a></li>
+          <li><a href="#tecnologias">Tecnologias</a></li>
           <li><a href="#projects">Projetos</a></li>
-          <li><a href="#tecnologies">Tecnologias</a></li>
           <li><a href="#contact">Contatos</a></li>
         </ul>
       </nav>
