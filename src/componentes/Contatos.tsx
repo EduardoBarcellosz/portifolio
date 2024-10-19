@@ -6,7 +6,7 @@ import './Style.css';
 const Contatos: React.FC = () => {
     return (
         <section id="contact" className="contacts">
-            <h2>Contatos</h2>
+            <h3>Contatos</h3>
             <div className="contact-section">
                 <a href="https://wa.me/5551997709939" target="_blank" rel="noopener noreferrer">
                     <button className='social-button whatsapp'>

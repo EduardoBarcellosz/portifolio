@@ -15,7 +15,7 @@ const Projetos: React.FC = () => {
   return (
     <section id="projects">
     <div className="projects-section">
-      <h3>Projetos</h3>
+      <h3 style={{color: '#7755be'}}>Projetos</h3>
       <Swiper
         effect={'coverflow'}
         grabCursor={true}
