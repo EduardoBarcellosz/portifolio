@@ -12,6 +12,7 @@ html {
 
 h3 {
   font-size: 2.0rem;
+  text-align: center;
 }
 
 .header {
@@ -20,9 +21,12 @@ h3 {
   justify-content: center;
   flex-wrap: wrap;
   padding: 2rem;
-  position: relative;
+  position: sticky;
   margin-right: auto;
   margin-left: auto;
+  z-index: 100;
+  top: 0;
+  background-color: #191E24;
 }
 
 .logo {
@@ -80,18 +84,107 @@ header::after {
 }
 
 .sobre-section p {
-  font-size: 1rem;
+  font-size: 1.3rem;
   color: #E2F1E7;
   line-height: 1.9;
 }
 
 .tecnologias-section {
-  display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
   margin-top: 2rem;
   margin-bottom: 6rem;
-  font-size: 1.5rem;
+  font-size: 2.5rem; 
+  padding-top: 5rem;
+}
+
+.tecnologias-display {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 8rem 0;
   
+}
+.tecnologia {
+  display: flex;
+  color:white;
+  width: 200px; /* Define a largura do retângulo */
+  height: 50px; /* Define a altura do retângulo */
+  padding: 1rem; /* Adiciona preenchimento interno ao retângulo */
+  border-radius: 8px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 2.5rem; /* Adiciona margem ao redor de cada item */
+  font-size: 1.5rem; /* Define o tamanho da fonte */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona sombra ao retângulo */
+  font-weight: 500;
+  gap: 1rem;
+  
+}
+ 
+#html {
+  background-color: #e44c2631;
+  box-shadow: 0 0px 22px #e44c26; /* Adiciona sombra ao retângulo */
+}
+
+#css {
+  background-color: #264de431;
+  box-shadow: 0 0px 22px #264de4; /* Adiciona sombra ao retângulo */
+}
+
+#javascript {
+  background-color: #f0db4f31;
+  box-shadow: 0 0px 22px #f0db4f; /* Adiciona sombra ao retângulo */
+}
+
+#typescript {
+  background-color: #007acc31;
+  box-shadow: 0 0px 22px #007acc; /* Adiciona sombra ao retângulo */
+}
+
+#react {
+  background-color: #61dafb31;
+  box-shadow: 0 0px 22px #61dafb; /* Adiciona sombra ao retângulo */
+}
+
+#c {
+  background-color: #a8b9cc31;
+  box-shadow: 0 0px 22px #a8b9cc; /* Adiciona sombra ao retângulo */
+}
+
+#docker {
+  background-color: #2496ed31;
+  box-shadow: 0 0px 22px #2496ed; /* Adiciona sombra ao retângulo */
+}
+
+#springboot {
+  background-color: #6db33f31;
+  box-shadow: 0 0px 22px #6db33f; /* Adiciona sombra ao retângulo */
+}
+
+#figma {
+  background-color: #f24e1e31;
+  box-shadow: 0 0px 22px #f24e1e; /* Adiciona sombra ao retângulo */
+}
+
+#java {
+  background-color: #00739631;
+  box-shadow: 0 0px 22px #007396; /* Adiciona sombra ao retângulo */
+}
+
+#mongodb {
+  background-color: #47A24831;
+  box-shadow: 0 0px 22px #47A248; /* Adiciona sombra ao retângulo */
+}
+
+#node {
+  background-color: #33993331;
+  box-shadow: 0 0px 22px #339933; /* Adiciona sombra ao retângulo */
+}
+
+#python {
+  background-color: #3776AB31;
+  box-shadow: 0 0px 22px #3776AB; /* Adiciona sombra ao retângulo */
 }
 
 .contacts {
@@ -238,6 +331,7 @@ header::after {
 @media (max-width: 480px) {
   .header {
     padding: 2.5rem;
+    position: relative;
   }
   
   .sobre-section {
