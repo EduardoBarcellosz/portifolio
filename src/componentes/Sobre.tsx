@@ -1,14 +1,13 @@
 import React from 'react';
 import './Style.css';
 
-const About: React.FC = () => {
+const Sobre: React.FC = () => {
     return (
-        <section id="about" className="about-section">
+        <section id="sobre" className="sobre-section">
         <h3>Sobre</h3>
         <p>Olá, meu nome é Eduardo Barcellos, 
             sou estudante de Engenharia de Software e tenho uma paixão por aprender tecnologias. 
-            Sempre busco me aprofundar em novas ferramentas e linguagens, 
-            especialmente aquelas que me ajudam a construir soluções inovadoras. 
+            Sempre busco me aprofundar em novas ferramentas e linguagens. 
             Tenho interesse em desenvolvimento web, 
             e também adoro desafios que envolvem otimização e design de sistemas. 
             Além disso, estou constantemente explorando o universo da programação 
@@ -16,4 +15,4 @@ const About: React.FC = () => {
         </section>
     );
 }
-export default About;
+export default Sobre;

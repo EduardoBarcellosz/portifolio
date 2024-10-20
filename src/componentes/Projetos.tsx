@@ -15,7 +15,7 @@ const Projetos: React.FC = () => {
   return (
     <section id="projects">
     <div className="projects-section">
-      <h3 style={{color: '#7755be'}}>Projetos</h3>
+      <h3 style={{color: '#9669FF'}}>Projetos</h3>
       <Swiper
         effect={'coverflow'}
         grabCursor={true}
@@ -26,7 +26,7 @@ const Projetos: React.FC = () => {
           stretch: 0,
           depth: 300,
           modifier: 1,
-          slideShadows: true,
+          slideShadows: false,
         }}
         loop={true}
         modules={[EffectCoverflow, Pagination]}

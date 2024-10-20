@@ -2,8 +2,7 @@
 
 html {
   scroll-behavior: smooth;
-  /* background-color: #433878;  */
-  background-color: #222831;
+  background-color: #191E24; /* Cor de fundo e fontes dos subtitulos passaram no teste adobe contrast analyzer */
 }
 
 * {
@@ -11,23 +10,26 @@ html {
   font-family: "DM Sans", sans-serif;
 }
 
+h3 {
+  font-size: 2.0rem;
+}
+
 .header {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  padding: 1.3rem;
-  position: sticky;
+  padding: 2rem;
+  position: relative;
   margin-right: auto;
   margin-left: auto;
-  position: relative;
 }
 
 .logo {
   display: flex;
   position: absolute;
   font-weight: bold;
-  font-size: 0.9rem;
+  font-size: 1rem;
   color: white;
 }
 
@@ -45,13 +47,13 @@ nav ul {
 nav ul li a {
   text-decoration: none;
   color: #fffefe;
-  font-size: 60%;
+  font-size: 90%;
 }
 
 header::after {
   content: "";
   height: 1px;
-  background: linear-gradient(90deg,indigo, violet);
+  background: linear-gradient(to right, #222831 0%,  #222831 0%, 30%, #7755BE 100%);
   width: 100%;
   position: absolute;
   bottom: 0rem;
@@ -66,20 +68,30 @@ header::after {
   }
 }
 
-.about-section {
+.sobre-section {
   justify-content: center;
   text-align: center;
-  padding: 2rem 10rem;
+  padding: 10rem 30rem;
 }
 
-.about-section h3 {
-  margin-bottom: 2rem;
-  color: #7755be;
+.sobre-section h3 {
+  margin-bottom: 5rem;
+  color: #9669FF;
 }
 
-.about-section p {
-  font-size: 70%;
+.sobre-section p {
+  font-size: 1rem;
   color: #E2F1E7;
+  line-height: 1.9;
+}
+
+.tecnologias-section {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  margin-bottom: 6rem;
+  font-size: 1.5rem;
+  
 }
 
 .contacts {
@@ -91,7 +103,8 @@ header::after {
 
 .contacts h3 {
   margin-bottom: 3rem;
-  color: #7755be;
+  color: #9669FF;
+  
 }
 
 .contact-section {
@@ -102,10 +115,8 @@ header::after {
 }
 
 .social-button {
-  width: 50px;
-  height: 50px;
-  width: 30px;
-  height: 30px;
+  width: 3rem; /* Aproximadamente 48px */
+  height: 3rem; /* Aproximadamente 48px */
   border: none;
   border-radius: 50%;
   display: flex;
@@ -117,13 +128,13 @@ header::after {
 
 .social-button svg {
   color: rgb(0, 0, 0);
-  font-size: 20px;
+  font-size: 1.5rem; /* Aproximadamente 20px */
   background: none;
 }
 
 .social-button:hover {
-  transform: scale(1.1);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: scale(1.2); /* Aumenta a escala no estado hover */
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2); /* Aproximadamente 4px e 8px */
 }
 
 .whatsapp {
@@ -143,23 +154,23 @@ header::after {
 }
 
 .swiper {
-  width: 30%;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  width: 25%;
+  padding-top: 7rem;
+  padding-bottom: 7rem;
 }
 
 .swiper-slide {
   background-position: center;
   background-size: cover;
-  width: 7rem;
-  height: 7rem;
+  width: 11rem;
+  height: 9rem;
 }
 
 .swiper-slide img {
   display: block;
   width: 100%;
   border-radius: 3%;
-  transition: transform 0.3s; /* Adicione a transição aqui para suavizar a escala */
+  transition: transform 1s; /* Adicione a transição aqui para suavizar a escala */
 }
 
 .swiper-slide img:hover {
@@ -171,11 +182,12 @@ header::after {
 
 .projects-section {
   text-align: center;
+  font-size: 1.5rem;
 }
 
 /* Responsive Styles */
 @media (max-width: 1200px) {
-  .about-section {
+  .sobre-section {
     padding: 2rem 9rem;
   }
 
@@ -205,7 +217,7 @@ header::after {
     padding: 0;
   }
 
-  .about-section {
+  .sobre-section {
     padding: 2rem;
   }
 
@@ -225,20 +237,20 @@ header::after {
 
 @media (max-width: 480px) {
   .header {
-    padding: 0.5rem;
+    padding: 2.5rem;
   }
   
-  .about-section {
+  .sobre-section {
     padding: 1rem;
   }
 
   .contact-section {
-    gap: 1rem;
+    gap: 2.5rem;
   }
 
   .social-button {
-    width: 30px;
-    height: 30px;
+    width: 50px;
+    height: 50px;
   }
 
   .swiper {
