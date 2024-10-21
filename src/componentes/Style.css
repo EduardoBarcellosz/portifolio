@@ -89,7 +89,6 @@ header::after {
   opacity: 1; /* Fica visível */
 }
 
-
 .sobre-section p {
   font-size: 1.3rem;
   color: #E2F1E7;
@@ -287,27 +286,28 @@ header::after {
 }
 
 .swiper {
-  width: 20%;
+  width: 36%;
   padding-top: 7rem;
-  padding-bottom: 7rem;
+  padding-bottom: 12rem;
+  margin: 0;
+  
 }
 
 .swiper-slide {
   background-position: center;
   background-size: cover;
-  width: 11rem;
+  width: 13rem;
   height: 9rem;
 }
 
 .swiper-slide img {
   display: block;
-  width: 100%;
+  width: 135%;
   border-radius: 3%;
   transition: transform 1s; /* Adicione a transição aqui para suavizar a escala */
 }
 
 .swiper-slide img:hover {
-  
   transform: scale(1.2);
   transition: transform 0.3s;
   z-index: 2; 
@@ -317,7 +317,7 @@ header::after {
   text-align: center;
   font-size: 1.5rem;
   padding-top: 7rem;
-  padding-bottom: 15rem;
+  padding-bottom: 10rem;
 }
 
 /* Responsive Styles */
@@ -384,12 +384,22 @@ header::after {
     gap: 2.5rem;
   }
 
+  .projects-section {
+    padding-top: 0;
+    padding-bottom: 5rem;
+  }
+
+  .tecnologias-section {
+    padding-top: 2rem;
+  }
+
   .social-button {
     width: 50px;
     height: 50px;
   }
 
   .swiper {
-    width: 100%;
+    width: 5%;
+    padding-left: 30%;
   }
 }
