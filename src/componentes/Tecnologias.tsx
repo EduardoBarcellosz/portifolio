@@ -1,9 +1,9 @@
 export const Tecnologias = () => {
   return (
     <section id="tecnologias" className="tecnologias-section">
-      <h3 style={{ color: "#9669FF" }}>Tecnologias</h3>
+      <h3>Tecnologias</h3>
       <div className="tecnologias-display">
-        <div className="tecnologia" id="html">
+        <div className="tecnologia hidden" id="html">
           <img
             src="https://img.icons8.com/color/48/000000/html-5--v1.png"
             alt="html"

@@ -76,6 +76,8 @@ header::after {
   justify-content: center;
   text-align: center;
   padding: 10rem 30rem;
+  opacity: 0; /* Começa invisível */
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out; /* Transições para a seção */
 }
 
 .sobre-section h3 {
@@ -83,10 +85,23 @@ header::after {
   color: #9669FF;
 }
 
+.sobre-section.show {
+  opacity: 1; /* Fica visível */
+}
+
+
 .sobre-section p {
   font-size: 1.3rem;
   color: #E2F1E7;
   line-height: 1.9;
+  opacity: 0; /* Começa invisível */
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out; /* Transições para o parágrafo */
+  transform: translateX(-20rem); /* Adiciona um efeito de deslocamento horizontal inicial */
+}
+
+.sobre-section.show p {
+  opacity: 1; /* Fica visível */
+  transform: translateX(0); /* Remove o deslocamento horizontal */
 }
 
 .tecnologias-section {
@@ -95,6 +110,16 @@ header::after {
   margin-bottom: 6rem;
   font-size: 2.5rem; 
   padding-top: 5rem;
+}
+
+.tecnologias-section h3 {
+  color: #9669FF;
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+}
+
+.tecnologias-section.show {
+  opacity: 1;
 }
 
 .tecnologias-display {
@@ -106,22 +131,28 @@ header::after {
 }
 .tecnologia {
   display: flex;
-  color:white;
-  width: 200px; /* Define a largura do retângulo */
-  height: 50px; /* Define a altura do retângulo */
-  padding: 1rem; /* Adiciona preenchimento interno ao retângulo */
+  color: white;
+  width: 200px;
+  height: 50px;
+  padding: 1rem;
   border-radius: 8px;
   align-items: center;
   justify-content: center;
   text-align: center;
-  margin: 2.5rem; /* Adiciona margem ao redor de cada item */
-  font-size: 1.5rem; /* Define o tamanho da fonte */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona sombra ao retângulo */
+  margin: 2.5rem;
+  font-size: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   font-weight: 500;
   gap: 1rem;
-  
+  opacity: 0; /* Oculta inicialmente */
+  transition: opacity 2.5s ease-out;
 }
- 
+
+.tecnologia.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 #html {
   background-color: #e44c2631;
   box-shadow: 0 0px 22px #e44c26; /* Adiciona sombra ao retângulo */
@@ -192,10 +223,18 @@ header::after {
   padding-bottom: 5rem;
   bottom: 0;
   position: relative;
+  opacity: 0; /* Começa invisível */
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out; /* Transições para a seção */
+  transform: translateX(-20rem);
+}
+
+.contacts.show {
+  opacity: 1; /* Fica visível */
+  transform: translateX(0);
 }
 
 .contacts h3 {
-  margin-bottom: 3rem;
+  margin-bottom: 10rem;
   color: #9669FF;
   
 }
@@ -205,11 +244,12 @@ header::after {
   justify-content: center;
   gap: 10rem;
   flex-wrap: wrap;
+  padding-bottom: 5rem;
 }
 
 .social-button {
-  width: 3rem; /* Aproximadamente 48px */
-  height: 3rem; /* Aproximadamente 48px */
+  width: 4rem; /* Aproximadamente 48px */
+  height: 4rem; /* Aproximadamente 48px */
   border: none;
   border-radius: 50%;
   display: flex;
@@ -221,7 +261,7 @@ header::after {
 
 .social-button svg {
   color: rgb(0, 0, 0);
-  font-size: 1.5rem; /* Aproximadamente 20px */
+  font-size: 2rem; /* Aproximadamente 20px */
   background: none;
 }
 
@@ -247,7 +287,7 @@ header::after {
 }
 
 .swiper {
-  width: 25%;
+  width: 20%;
   padding-top: 7rem;
   padding-bottom: 7rem;
 }
@@ -276,6 +316,8 @@ header::after {
 .projects-section {
   text-align: center;
   font-size: 1.5rem;
+  padding-top: 7rem;
+  padding-bottom: 15rem;
 }
 
 /* Responsive Styles */
