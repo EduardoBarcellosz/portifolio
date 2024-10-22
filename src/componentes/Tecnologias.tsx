@@ -1,7 +1,19 @@
+import { motion } from "framer-motion";
+
 export const Tecnologias = () => {
   return (
     <section id="tecnologias" className="tecnologias-section">
-      <h3>Tecnologias</h3>
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1}}
+        exit={{ opacity: 0 }}
+        transition={{ duration: 2.5 }} // Adiciona a duração da transição
+        viewport={{
+          margin: '-200px 0px -300px 0px', // Adiciona margem para o viewport (top, right, bottom, left)
+        }}
+      >
+        <h3>Tecnologias</h3>
+      </motion.div>
       <div className="tecnologias-display">
         <div className="tecnologia hidden" id="html">
           <img

@@ -103,6 +103,22 @@ header::after {
   transform: translateX(0); /* Remove o deslocamento horizontal */
 }
 
+.nome-animado {
+  background: linear-gradient(to right, #fc72ff, #8f68ff, #487bff, #8f68ff, #fc72ff);
+  background-size: 200%;
+  background-clip: text;
+  -webkit-background-clip:text; 
+  -webkit-text-fill-color: transparent;
+  animation: animate-gradient 2.5s linear infinite;
+}
+
+@keyframes animate-gradient {
+  to{
+    background-position: 200%;
+  }
+  
+}
+
 .tecnologias-section {
   flex-wrap: wrap;
   margin-top: 2rem;
@@ -285,33 +301,6 @@ header::after {
   background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
 }
 
-.swiper {
-  width: 36%;
-  padding-top: 7rem;
-  padding-bottom: 12rem;
-  margin: 0;
-  
-}
-
-.swiper-slide {
-  background-position: center;
-  background-size: cover;
-  width: 13rem;
-  height: 9rem;
-}
-
-.swiper-slide img {
-  display: block;
-  width: 135%;
-  border-radius: 3%;
-  transition: transform 1s; /* Adicione a transição aqui para suavizar a escala */
-}
-
-.swiper-slide img:hover {
-  transform: scale(1.2);
-  transition: transform 0.3s;
-  z-index: 2; 
-}
 
 .projects-section {
   text-align: center;
@@ -365,9 +354,6 @@ header::after {
     height: 40px;
   }
 
-  .swiper {
-    width: 80%;
-  }
 }
 
 @media (max-width: 480px) {
@@ -398,8 +384,4 @@ header::after {
     height: 50px;
   }
 
-  .swiper {
-    width: 5%;
-    padding-left: 30%;
-  }
 }

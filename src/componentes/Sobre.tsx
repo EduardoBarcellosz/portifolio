@@ -5,7 +5,7 @@ const Sobre: React.FC = () => {
     return (
         <section id="sobre" className="sobre-section">
         <h3>Sobre</h3>
-        <p>Olá, meu nome é Eduardo Barcellos, 
+        <p>Olá, meu nome é <span className="nome-animado">Eduardo Barcellos</span>, 
             sou estudante de Engenharia de Software e tenho uma paixão por aprender tecnologias. 
             Sempre busco me aprofundar em novas ferramentas e linguagens. 
             Tenho interesse em desenvolvimento web, 
