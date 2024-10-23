@@ -317,6 +317,7 @@ header::after {
 
   .contact-section {
     gap: 5rem;
+    padding: 2rem 9rem; /* Adiciona padding para a seção de contatos */
   }
 }
 
@@ -346,14 +347,10 @@ header::after {
   }
 
   .contact-section {
-    gap: 2rem;
+    padding: 2rem; /* Adiciona padding para a seção de contatos */
+    gap: 2rem; /* Ajusta o gap para a seção de contatos */
+    
   }
-
-  .social-button {
-    width: 40px;
-    height: 40px;
-  }
-
 }
 
 @media (max-width: 480px) {
@@ -364,11 +361,24 @@ header::after {
   
   .sobre-section {
     padding: 1rem;
+    margin-top: 4rem;
+  }
+
+  .contacts {
+    opacity: 1;
+    transform: translateX(0);
   }
 
   .contact-section {
-    gap: 2.5rem;
+    padding: 1rem; 
+    gap: 3rem; 
   }
+
+  .social-button {
+    width: 2rem; /* Aproximadamente 48px */
+    height: 2rem; /* Aproximadamente 48px */
+  }
+  
 
   .projects-section {
     padding-top: 0;
